@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section id="container">
+    <header>
+      <div class="hero">
+        <h1>AquaWave <img src="https://cdn-icons-png.flaticon.com/128/1508/1508258.png" alt=""></h1>
+
+      </div>
+    </header>
+  </section>
+
+  <section id="box">
+    <div class="footer">
+      <div class="footer-left">
+        <h1>Welcome to AquaWave</h1>
+        <p>We all thirst for water but getting clean and purified water
+          has become problematic.Aquawave offers you healthy drinking water
+          at an affordable price and with as low as Ksh 10 you can get yourself 
+          pure and clean cup of water.You can reach to us through our contacts below.
+
+          <h2>Contacts</h2>
+          <p>Tell: 0710037212</p>
+          <p>Location: Juja</p>
+          <p>Email: johnmwaura@gmail.com</p>
+        </p>
+      </div>
+      <div class="footer-right">
+        <div class="van">
+          <div class="sidebar">
+
+            <ul>
+
+              <div class="contain">
+                <li>Personal</li>
+              </div>
+
+              <div class="contain">
+                <li>Jobs</li>
+              </div>
+
+              <div class="contain">
+                <li>Time off</li>
+              </div>
+              
+              <div class="contain">
+                <li>Emergency</li>
+              </div>
+
+              <div class="contain">
+                <li>Shortcuts</li>
+              </div>
+              
+              <div class="contain">
+                <li>Benefits</li>
+              </div>
+            
+             <div class="contain">
+              <li>Emergency Info</li>
+             </div>
+             
+            </ul>
+          </div>
+          <div class="list">
+            <div class="random">
+              <h1>Time Off</h1>
+
+              <button type="button" class="myButton">
+                Reset Time Off
+              </button>
+            </div>
+          </div>
+          <div class="number">
+            <div class="num1">
+              <p>Minerals</p>
+              <h1>20</h1>
+            </div>
+            <div class="num1">
+              <p>Bottles</p>
+              <h1>7</h1>
+            </div>
+            <div class="num1">
+              <p>Risks</p>
+              <h1>0</h1>
+            </div>
+            <div class="num1">
+              <p>Maximum Litres</p>
+              <h1>2</h1>
+            </div>
+          </div>
+
+          <div class="fan">
+            <div class="num2">
+              <p>Upcoming Times Off</p>
+              
+            </div>
+            <div class="num3">
+              <p>April 24</p>
+              
+            </div>
+            <div class="num3">
+              <p>May 23 - 28</p>
+              
+            </div>
+            <div class="num2">
+              <p>June 23 - 30</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="preview">
+    <div class="stats">
+      <div class="line">
+        <h1>
+          Sign up for a 1-1 demo
+        </h1>
+        <form>
+          <label for="firstname">firstname:</label>
+          <input type="text" name="firstname" required>
+
+          <label for="lastname">lastname:</label>
+          <input type="text" name="lastname" required>
+
+          <label for="email">Email address: </label>
+          <input type="text" name="email" required>
+
+          <label for="message">Your Message:</label>
+          <textarea name="message" rows="4" required></textarea>
+
+          <button>Get a Demo</button>
+        </form>
+
+      </div>
+
+      <div class="vid">
+        <img src="" alt="" id="images ">
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const images = document.getElementById("images");
+
+    const image = [
+    
+    ];
+
+    setInterval(function(){
+      let randomNumber = Math.floor(Math.random() *image.length);
+
+      images.src = image[randomNumber];
+
+    }, 2000);
+  </script>
+</body>
+</html>
